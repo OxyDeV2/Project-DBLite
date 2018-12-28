@@ -121,19 +121,19 @@ Set-content $file $content
 
 #------ Envoie du tableau par mail ------#
 
-$EmFrom = "Auto-task@3ci.fr"
+$EmFrom = "Auto-task@i.fr"
 
-$username = "dacosta@3ci.fr"
+$username = "email@email.com"
 
-$pwd = "24682468N"
+$pwd = "SMTPPASSWORD"
 
-$Server = "ssl0.ovh.net"
+$Server = "smtpserver"
 
 $port = 587
 
-$EmTo = "dacosta@3ci.fr"
+$EmTo = "exmeple@sfef.com"
 
-$Subj = "Check-up serveur 3ci hebdomadaire : $env:COMPUTERNAME"
+$Subj = "Check-up serveur hebdomadaire : $env:COMPUTERNAME"
 
 $Bod =$nompc+"`n`n"+ $file
 
